@@ -24,24 +24,32 @@
             </label>
           </div>
           <button class="w-100 btn btn-lg btn-dark" onclick="login()" >Login</button>
-          
           <button  onclick="sendPasswordReset() " class="btn forgotpass">Forgot Password</button>
           <hr style="max-width: 500px;">
-
           <p style="display: inline-block;">Dont have an account</p>
 
-         <a href="signup.html"><button class=" btn btn-lg btn-dark">Signup</button></a>
-
+         <button onclick="signuppage()" class=" btn btn-lg btn-dark">Signup</button>
           <p class="mt-5 mb-3 text-muted">© Tkr College Of Engineering And Technology</p>
           
       </div>
-
+  <!-- user loggedin div -->
      <div id="loggedin-div" class="text-center">
        <h4 id="user">Welcome User</h4>
        <p>You are currently loggedin</p>
        <button onclick="logout()"  class="w-100 btn btn-lg btn-dark" style="max-width:330px;" >Logout</button>
-
      </div>
+ 
+    <!-- Signup  -->
+    <div class="form-signup" id="signup-div">
+      <h1 class="h3 mb-3 fw-normal">Please sign up</h1>
+      <input type="email" id="newEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+      <input type="password" id="newPassword" class="form-control" onkeyup='check();'  placeholder="New Password" required="">
+      <input type="password" id="newPassword_confirm" onkeyup='check();'  class="form-control" placeholder="Retype Password" required="">
+      <span id='message' class="text-center"></span>
+
+      <button class="w-100 btn btn-lg btn-dark" onclick="signup()">Sign up</button>
+      <p class="mt-5 mb-3 text-muted">© Tkr College Of Engineering And Technology</p>
+  </div>
 
               
 
