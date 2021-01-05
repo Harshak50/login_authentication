@@ -35,7 +35,7 @@ firebase.initializeApp(config);
 });
 
 
-  document.getElementById("user").innerHTML = "Welcome  : " + email_id;
+
 
 
   //  function to open signup page
