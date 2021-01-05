@@ -108,5 +108,5 @@ var check = function() {
 
 function logout(){
   firebase.auth().signOut();
-  window.location = 'index.html';
+   document.location.href = "index.html"; 
 }
